@@ -29,3 +29,8 @@ body {
 
   background-color: rgb(160, 160, 255);
 }
+
+button {
+  border: none;
+  background-color: transparent;
+}

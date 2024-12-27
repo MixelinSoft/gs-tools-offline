@@ -1,0 +1,12 @@
+.logoContainer {
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.logoImage {
+  height: 34px;
+}
