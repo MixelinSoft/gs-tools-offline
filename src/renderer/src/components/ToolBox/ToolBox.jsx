@@ -1,12 +1,18 @@
-import { Link } from 'react-router-dom'
-import styles from './ToolBox.module.css'
+import { Link } from 'react-router-dom';
+import styles from './ToolBox.module.css';
+import tools from '../../../data/tools';
+import ToolCard from './ToolCard/ToolCard';
 
 const ToolBox = (props) => {
+  const localization = 'ua';
   return (
     <div>
-      <Link to="/report-generator">tese</Link>
+      {tools.map((tool) => (
+        <ToolCard />
+      ))}
+      <Link to='/report-generator'>tese</Link>
     </div>
-  )
-}
+  );
+};
 
-export default ToolBox
+export default ToolBox;
