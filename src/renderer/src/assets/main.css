@@ -29,10 +29,21 @@ body {
 
   background-color: rgb(160, 160, 255);
 
+  padding: 48px 0 24px;
+
   overflow: hidden;
+
+  height: 100%;
+
+  position: relative;
 }
 
 button {
   border: none;
   background-color: transparent;
+}
+
+.main {
+  padding: 148px 0 0 24px;
+  border: 1px solid red;
 }
