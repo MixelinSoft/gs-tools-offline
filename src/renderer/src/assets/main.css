@@ -1,0 +1,31 @@
+/* Подключаем разные начертания шрифта */
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Thin.ttf') format('truetype');
+  font-weight: thin;
+  font-style: normal;
+}
+
+/* Применяем шрифт глобально */
+body {
+  font-family: 'roboto';
+  font-weight: normal;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+
+  background-color: rgb(160, 160, 255);
+}

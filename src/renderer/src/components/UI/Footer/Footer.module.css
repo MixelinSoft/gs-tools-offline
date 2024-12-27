@@ -4,11 +4,14 @@
   left: 0;
   right: 0;
 
-  height: 48px;
+  height: 24px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  border: 1px solid red;
+  background-color: #fff;
+
+  border-radius: 6px 6px 0 0;
+  z-index: 100;
 }
