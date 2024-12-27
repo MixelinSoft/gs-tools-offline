@@ -10,8 +10,8 @@ const uiSlice = createSlice({
   name: 'ui',
   initialState,
   reducers: {
-    asideMenuToggle(state) {
-      state.asideMenuShow = !state.asideMenuShow
+    asideMenuToggle(state, { payload }) {
+      state.asideMenuShow = payload
     }
   }
 })

@@ -1,16 +1,23 @@
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import styles from './AsideMenu.module.css'
 import { Link } from 'react-router-dom'
+import { Offcanvas } from 'react-bootstrap'
+import { uiActions } from '../../../../store/slices/uiSlice'
 
 const AsideMenu = () => {
+  // Create Dispatch Function
+  const dispatch = useDispatch()
+  const closeMenuHandler = () => {
+    dispatch(uiActions.asideMenuToggle(false))
+  }
   const showMenu = useSelector((state) => state.ui.asideMenuShow)
 
   return (
-    <div className={`${styles.asideMenuContainer} ${showMenu ? styles.show : ''}`}>
-      <Link to="/" className={styles.menuItem}>
+    <Offcanvas show={showMenu} onHide={closeMenuHandler}>
+      <Link to="/" className={styles.link} onClick={closeMenuHandler}>
         Home
       </Link>
-    </div>
+    </Offcanvas>
   )
 }
 

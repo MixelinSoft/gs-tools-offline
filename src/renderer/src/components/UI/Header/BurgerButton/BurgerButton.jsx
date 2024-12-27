@@ -6,12 +6,12 @@ import { useDispatch } from 'react-redux'
 const BurgerButton = () => {
   // Create Dispatch Function
   const dispatch = useDispatch()
-  const burgerButtonHandler = () => {
-    dispatch(uiActions.asideMenuToggle())
+  const showMenuHandler = () => {
+    dispatch(uiActions.asideMenuToggle(true))
   }
 
   return (
-    <button className={styles.burgerButton} onClick={burgerButtonHandler}>
+    <button className={styles.burgerButton} onClick={showMenuHandler}>
       <HiOutlineMenuAlt1 className={styles.burgerButtonIcon} />
     </button>
   )
