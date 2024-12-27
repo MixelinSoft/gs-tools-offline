@@ -1,6 +1,6 @@
 {
   "name": "gs-tools-offline",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An Electron application with React",
   "main": "./out/main/index.js",
   "author": "example.com",
@@ -20,10 +20,13 @@
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.1",
     "@electron-toolkit/utils": "^3.0.0",
+    "@reduxjs/toolkit": "^2.5.0",
     "bootstrap": "^5.3.3",
     "electron-updater": "^6.1.7",
     "react-bootstrap": "^2.10.7",
-    "react-icons": "^5.4.0"
+    "react-icons": "^5.4.0",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.1.1"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config": "^1.0.2",

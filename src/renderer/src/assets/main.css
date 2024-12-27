@@ -28,6 +28,8 @@ body {
   -webkit-font-smoothing: antialiased;
 
   background-color: rgb(160, 160, 255);
+
+  overflow: hidden;
 }
 
 button {
